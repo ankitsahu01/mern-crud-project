@@ -1,0 +1,200 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  color:rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  /* border: 1px solid red; */
+}
+
+::placeholder{
+  opacity: 0.7 !important;
+}
+
+/* Background and Foreground Color */
+.bg-yellow{
+  background-color: #FCD12A;
+}
+.fg-yellow{
+  color: #FCD12A;
+}
+.gr-yellow{
+  background: linear-gradient( 45deg,#f1ba02,#FCD12A);
+}
+.divider{
+  background-color: #FCD12A;
+  min-height: 2px;
+  width: 4.7rem;
+}
+
+/* Change Icon Color */
+.input-group i.bi{
+  color:#212121;
+}
+
+/* Content Full Height and Element Center Horizontally as well as Vertically */
+main{
+  height: 100vh;
+}
+.hv-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling NavBar */
+nav.navbar{
+  position: sticky;
+  top:0;
+  width: 100%;
+  z-index: 10;
+}
+.nav-item .nav-link{
+  display: inline-block;
+  /* font-size: 1.1rem; */
+  margin:0 8px;
+}
+.nav-item .nav-link::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #212121;
+  transition: width .3s;
+}
+.nav-item .nav-link:hover::after{
+  width: 100%;
+}
+.nav-item .nav-link.active::after{
+  width: 100%;
+  font-weight: 500;
+}
+
+/* Styling Form */
+.shadow-container{
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 12px #0000006b;
+  background-color: rgba(49, 49, 49, 0.308);
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+.btn-yellow{
+  width:100%;
+  background-color: #FCD12A !important;
+}
+.btn-yellow:hover{
+  background-color: #e6bf27 !important;
+}
+.link{
+  color: #FCD12A;
+  text-decoration: none;
+}
+.link:hover{
+  color: #e6bf27;
+}
+
+/* Page Left Side Img */
+.float-left{
+  float: left;
+  height: 100%;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.float-right{
+  float: right;
+  height: 100%;
+}
+.page-img{
+  width: 250px;
+  height: 190px;
+}
+
+
+/* Profile Styling*/
+.profile-container{
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.profile-img-container{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.profile-img{
+  width: 150px;
+}
+.edit-btn{
+  background-color: #FCD12A !important;
+}
+.edit-btn:hover{
+  background-color: #e6bf27 !important;
+}
+
+
+/* Tab Link Styling */
+.nav-tabs .active{
+  border-bottom-color: #212529 !important;
+}
+.nav-tabs .nav-item .nav-link{
+  color: #fff;
+}
+.nav-tabs .nav-item .nav-link:hover{
+  color:#FCD12A;
+}
+.nav-tabs .nav-item .nav-link::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #FCD12A;
+  transition: width .3s;
+}
+.nav-tabs .nav-item .nav-link:hover::after{
+  width: 100%;
+}
+.nav-tabs .nav-item .nav-link.active::after{
+  width: 100%;
+  font-weight: 500;
+}
+.nav-tabs .nav-item .nav-link.active{
+  color: #fff;
+  background-color: inherit;
+}
+
+
+/* 404 Not Found */
+.not-found-title{
+  display: inline;
+  font-size: calc(35vw - 10px );
+  font-weight: bold;
+  opacity: 0.1;
+}
+.not-found-text{
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+}
+
+
+/* Responsive Settings */
+@media only screen and (min-width:851px) {
+  .yellow-form{
+    padding: 25px 50px;
+  }
+}
+@media only screen and (max-width:850px) {
+  .float-left{
+    display: none;
+  }
+  .float-right{
+    width: 75vw;
+  }
+  .yellow-form{
+    margin: 15px;
+    margin-top: -50px;
+  }
+}
