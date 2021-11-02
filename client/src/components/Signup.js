@@ -1,6 +1,6 @@
 import React,{ useState, useContext } from 'react'
 import { NavLink, useHistory } from 'react-router-dom';
-import signUpImg from '../images/signup-1.gif';
+import signUpImg from '../images/signup.png';
 import { IsLoginContext } from '../App';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
